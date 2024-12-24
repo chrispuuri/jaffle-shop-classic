@@ -8,7 +8,7 @@ jaffle_shop:
       role: "{{ env_var('SNOWFLAKE_ROLE') | as_text }}"
 
       # SSO config -- The three following fields are REQUIRED
-      authenticator: https://hakkoda.okta.com/app/snowflake/exk4w5lqykJFOt1OV697/sso/saml
+      authenticator: 'https://hakkoda.okta.com'
       username: chris_puuri
       password: "{{ env_var('SNOWFLAKE_PASSWORD') | as_text }}"
       
